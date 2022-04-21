@@ -1,0 +1,14 @@
+PROCEDURE insertion_sort(arr:Array of integers)
+VAR
+    i,j:integer;
+BEGIN
+    FOR i FROM 1 TO arr.length-1  DO
+        val=arr[i];
+        j=i-1;
+        WHILE (j>0 && arr[j]>val) DO
+            arr[j+1]=arr[j];
+            j:=j-1;
+        END_WHILE
+        arr[j+1]:=val;
+    END_FOR
+END
